@@ -55,9 +55,9 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-body {
-  margin: 20px;
-}
+/*****************GENERALE*******************************
+***********************************************************/
+
  #accueil {
    display: flex;
    align-items: center;
@@ -67,19 +67,46 @@ body {
   width: 100%;
   margin: auto;
   align-items: center;
+
+}
+#choixUser {
+  margin: 0;
+  padding: 0;
+}
+
+#choixPc  {
+  align-items: center;
+  flex-direction: column;
+}
+
+#pseudo {
+  text-align: center;
 }
 
 #choixPc {
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
+#choixPc div {
+  padding: 0;
+}
+
+#resultat {
+  text-align: center;
+}
+
 
 * {
   border: 1px solid black;
 }
 
+/****************************MOBILE******************************
+********************************************************************/
 
-
-
+h1 {
+  font-size: 30px !important;
+}
 
 
 
@@ -92,8 +119,18 @@ body {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+/******************Tablette***********************
+********************************************************/
+@media only screen and (min-width: 768px) {
 
-@media only screen and (min-width: 35em) {
+#imgOrdi img {
+  width: 200px !important;
+}
+}
+
+/*****************PC************************************
+******************************************************/
+@media only screen and (min-width: 992px) {
 
 }
 

@@ -19,15 +19,18 @@ function comparer (choixUtilisateur) {
     if (choixOrdi < 0.34) {
           	choixOrdi = "pierre";
             document.getElementById("imgOrdi").src="img/POrdi.jpg";
+
           }
             else if(choixOrdi <= 0.67) {
           	choixOrdi = "feuille";
             document.getElementById("imgOrdi").src="img/FOrdi.jpg";
+
           }
 
             else {
           	choixOrdi = "ciseaux";
             document.getElementById("imgOrdi").src="img/COrdi.jpg";
+    
           }
 //Affichage du resultat//
 document.getElementById("resultat").innerHTML = "The computer had chosen :"  + choixOrdi;
