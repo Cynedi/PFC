@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+<main>
+
+        <section id="accueil">
+          <h1>-LE SHOUSHILING-</h1>
+          <button type="button" class="btn btn-success" onclick="player()">PLAY</button><br>
+          <span id ="score"></span>
+        </section>
+
+  <div class="row container-fluid">
+        <section id="choixUser" class="col-12 col-sm-6 row ">
+          <h2 id="pseudo" class="col-12">YOUR PSEUDO</h2>
+          <div id="user" class="row  col-12  justify-content-around d-flex flex-column">
+            <img class="col-8 col-sm-6  d-flex flex-column" onclick="comparer('pierre')" src="img/PUser.jpg" alt="pierre" id="pierreUser">
+            <img class="col-8 col-sm-6 d-flex flex-column"onclick="comparer('feuille')" src="img/fUser.jpg" alt="feuille" id="feuilleUser">
+            <img class="col-8 col-sm-6  d-flex flex-column"onclick="comparer('ciseaux')" src="img/CUser.jpg" alt="ciseaux" id="ciseauxUser">
+          </div>
+        </section>
+
+        <section id="choixPc" class="col-12 col-sm-6 row ">
+          <h2>Choice of Computer</h2>
+          <div  class="row  col-12 justify-content-around">
+            <img class="col-12 "src="img/POrdi.jpg" alt="pierre" id="imgOrdi">
+          </div>
+        </section>
+  </div>
+        <p id="resultat">RESULTAT</p>
+</main>
+
+
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
