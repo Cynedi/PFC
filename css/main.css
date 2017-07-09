@@ -57,7 +57,13 @@ textarea {
    ========================================================================== */
 /*****************GENERALE*******************************
 ***********************************************************/
+main {
 
+      font-family: 'La Belle Aurore', cursive;
+
+
+
+}
  #accueil {
    display: flex;
    align-items: center;
@@ -88,8 +94,10 @@ textarea {
   padding: 0;
   margin: 0;
 }
+
 #choixPc div {
-  padding: 0;
+  padding: 0px;
+  margin-left: 40px;
 }
 
 #resultat {
@@ -97,17 +105,31 @@ textarea {
 }
 
 
-* {
-  border: 1px solid black;
-}
+
 
 /****************************MOBILE******************************
 ********************************************************************/
 
+main {
+  background-image: url("../img/tropik.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 h1 {
-  font-size: 30px !important;
+  font-size: 40px !important;
+  padding-top: 15px;
 }
 
+#pseudo {
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+#choixPc h2 {
+  font-size: 25px;
+  margin-top: 15px;
+}
 
 
 
@@ -123,14 +145,43 @@ h1 {
 ********************************************************/
 @media only screen and (min-width: 768px) {
 
-#imgOrdi img {
-  width: 200px !important;
+main {
+  background-image: url("../img/tropicale.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
+
+  h1 {
+    font-size: 80px !important;
+    padding-top: 40px;
+  }
+
+#choixUser  {
+  margin-top: -60px;
+}
+
+#choixPc {
+    margin-top: -60px;
+}
+  #imgOrdi {
+    margin-top: 100px;
+  }
 }
 
 /*****************PC************************************
 ******************************************************/
 @media only screen and (min-width: 992px) {
+
+  #choixUser  {
+    margin-top: -20px;
+  }
+
+  #choixPc {
+      margin-top: -20px;
+  }
+
 
 }
 
