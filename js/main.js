@@ -1,6 +1,8 @@
 var pointUser = 0;
 var pointOrdi = 0;
 
+var image = newImage ();
+
 
 
 function player () {
@@ -8,10 +10,18 @@ function player () {
   document.getElementById("pseudo").innerHTML="Take the good choice " + play;
 }
 
+//animation js ajout d'un gif//
+image.onload=function myMove () {
+  document.getElementById("image").src=image.src;
+}
+
+image.src="../img/papillon.gif";
+
 
 
 //On crée une fonction avec les 2 choix qui retrournera le choix gagnant//
 function comparer (choixUtilisateur) {
+
 
     var choixOrdi = Math.random(); //valeur aleatoire entre 0 et 1//
 
@@ -19,6 +29,7 @@ function comparer (choixUtilisateur) {
     if (choixOrdi < 0.34) {
           	choixOrdi = "pierre";
             document.getElementById("imgOrdi").src="img/POrdi.jpg";
+
 
           }
             else if(choixOrdi <= 0.67) {
@@ -30,10 +41,12 @@ function comparer (choixUtilisateur) {
             else {
           	choixOrdi = "ciseaux";
             document.getElementById("imgOrdi").src="img/COrdi.jpg";
-    
+
           }
 //Affichage du resultat//
 document.getElementById("resultat").innerHTML = "The computer had chosen :"  + choixOrdi;
+
+
 
 //Si les 2 choix sont les même//
   if(choixOrdi === choixUtilisateur) {
@@ -46,10 +59,12 @@ document.getElementById("resultat").innerHTML = "The computer had chosen :"  + c
   if(choixUtilisateur === "ciseaux") {
     pointOrdi++;
     document.getElementById("score").innerHTML= "You" + " " + pointUser + "  /  " + pointOrdi + "  Computer";
+
     }
   else {
     pointUser++;
     document.getElementById("score").innerHTML= "You" + "  " + pointUser + "  /  " + pointOrdi + "  Computer";
+
     }
 }
 
@@ -95,5 +110,6 @@ if (pointOrdi ==3 ) {
   pointOrdi = 0;
   document.getElementById("score").innerHTML= "You" + "  " + pointUser + " /   " + pointOrdi + " Computer";
 }
+
 
 }
