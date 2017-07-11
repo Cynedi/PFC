@@ -11,14 +11,11 @@ function player () {
 }
 
 //animation js ajout d'un gif//
-image.onload=function myMove () {
-  document.getElementById("image").src=image.src;
-}
-
-image.src="../img/papillon.gif";
 
 
-
+function test(){
+document.getElementById('monImage').classList.remove('hidden');
+ }
 //On crée une fonction avec les 2 choix qui retrournera le choix gagnant//
 function comparer (choixUtilisateur) {
 
@@ -55,6 +52,7 @@ document.getElementById("resultat").innerHTML = "The computer had chosen :"  + c
 
 //Sinon si le choix de l'ordi est pierre//
   else if(choixOrdi === "pierre") {
+
 
   if(choixUtilisateur === "ciseaux") {
     pointOrdi++;
@@ -98,10 +96,12 @@ document.getElementById("resultat").innerHTML = "The computer had chosen :"  + c
 
 //Affichage des scores//
 if (pointUser ==3 ) {
+
   alert("WINNER !") ;
   pointUser = 0;
   pointOrdi = 0;
   document.getElementById("score").innerHTML= "You" + "  " + pointUser + "  /  " + pointOrdi + " Computer";
+  test();
 
 }
 if (pointOrdi ==3 ) {
