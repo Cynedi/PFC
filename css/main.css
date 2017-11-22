@@ -162,15 +162,17 @@ main {
 
   h1 {
     font-size: 80px !important;
-    padding-top: 40px;
+    padding-top: 110px;
   }
 
+
+
 #choixUser  {
-  margin-top: -60px;
+  margin-top: -30px;
 }
 
 #choixPc {
-    margin-top: -60px;
+    margin-top: -30px;
 }
   #imgOrdi {
     margin-top: 100px;
